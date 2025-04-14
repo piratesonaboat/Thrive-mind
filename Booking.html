@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Session - Thrive Mind</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #262928;
+      color: beige;
+    }
+
+    header {
+      background-color: #388a3c;
+      color: beige;
+      padding: 20px;
+      text-align: left;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .menu-btn {
+      background-color: #61da85;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .menu {
+      background-color: #5ab95e;
+      color: black;
+      width: 200px;
+      padding: 20px;
+      border-radius: 10px;
+      display: none;
+      position: fixed;
+      top: 60px;
+      right: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    .menu h2 {
+      margin: 10px 0 20px;
+      text-align: center;
+      color: beige;
+    }
+
+    .menu button {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      background-color: #7dc776;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .menu button:hover {
+      opacity: 0.8;
+    }
+
+    .booking-container {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: #333632;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .booking-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #7dc776;
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    form button {
+      background-color: #7dc776;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    form button:hover {
+      background-color: #66bb6a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Thrive Mind</h1>
+  </header>
+
+  <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+
+  <div class="menu" id="menu">
+    <h2>Menu Navigation</h2>
+    <button onclick="window.location.href='index.html'">Home</button>
+    <button onclick="window.location.href='article_page.html'">Articles</button>
+    <button onclick="window.location.href='contact_page.html'">Contact</button>
+    <button onclick="window.location.href='booking.html'">Book Session</button>
+    <button onclick="goBack()">Back</button>
+  </div>
+
+  <div class="booking-container">
+    <h2>Book a Session</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="type">Session Type</label>
+      <select id="type" name="type" required>
+        <option value="">-- Select --</option>
+        <option value="personal">Personal Therapy</option>
+        <option value="consultation">Consultation</option>
+      </select>
+
+      <label for="message">Any specific concerns?</label>
+      <textarea id="message" name="message" placeholder="Write a brief message..."></textarea>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>

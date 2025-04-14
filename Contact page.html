@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Thrive Mind☘️</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #262928;
+      color: beige;
+    }
+
+    header {
+      background-color: #388a3c;
+      padding: 20px;
+      text-align: left;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .menu-btn {
+      background-color: #61da85;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .menu {
+      background-color: #5ab95e;
+      color: black;
+      width: 200px;
+      padding: 20px;
+      border-radius: 10px;
+      display: none;
+      position: fixed;
+      top: 60px;
+      right: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    .menu h2 {
+      text-align: center;
+      color: beige;
+      margin-bottom: 20px;
+    }
+
+    .menu button {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      background-color: #7dc776;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .menu button:hover {
+      opacity: 0.8;
+    }
+
+    .contact-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      color: #7dc776;
+      margin-bottom: 40px;
+    }
+
+    .team-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .contact-card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .contact-card h3 {
+      margin: 10px 0 5px;
+      color: #a7e0a3;
+    }
+
+    .contact-card p {
+      margin: 0;
+      color: beige;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Thrive Mind</h1>
+  </header>
+
+  <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+
+  <div class="menu" id="menu">
+    <h2>Menu Navigation</h2>
+    <button onclick="window.location.href='Riyal.html'">Home</button>
+    <button onclick="window.location.href='Article Page.html'">Articles</button>
+    <button onclick="window.location.href='Success Stories.html'">Success Stories</button>
+    <button onclick="window.location.href='Contact Page.html'">Therapy</button>
+    <button onclick="goBack()">Back</button>
+  </div>
+
+  <section class="contact-section">
+    <h2>Meet Our Support Team</h2>
+    <div class="team-container">
+      <div class="contact-card">
+        <img src="k8.png" alt="Therapist 1">
+        <h3>Ms. Ruth Marie.</h3>
+        <p>K-8Counselor@kis.in</p>
+      </div>
+      <div class="contact-card">
+        <img src="notk8.png" alt="Therapist 2">
+        <h3>Ms. Marija Sitar</h3>
+        <p>KISCounselor@kis.in</p>
+      </div>
+      <div class="contact-card">
+        <img src="rajaboi.png" alt="Therapist 3">
+        <h3>Mr. Raja Krishnamoorthy</h3>
+        <p>Chaplain@kis.in</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>

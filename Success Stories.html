@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Articles - Thrive Mind☘️</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #262928;
+      color: beige;
+    }
+
+    header {
+      background-color: #388a3c;
+      padding: 20px;
+      text-align: left;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .menu-btn {
+      background-color: #61da85;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .menu {
+      background-color: #5ab95e;
+      color: black;
+      width: 200px;
+      padding: 20px;
+      border-radius: 10px;
+      display: none;
+      position: fixed;
+      top: 60px;
+      right: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    .menu h2 {
+      margin: 10px 0 20px;
+      text-align: center;
+      color: beige;
+    }
+
+    .menu button {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      background-color: #7dc776;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .menu button:hover {
+      opacity: 0.8;
+    }
+
+    .article-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .article-image {
+      flex: 1;
+      min-width: 300px;
+      max-width: 400px;
+    }
+
+    .article-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .article-content {
+      flex: 2;
+      padding: 30px;
+    }
+
+    .article-content h2 {
+      color: #7dc776;
+      margin-bottom: 10px;
+    }
+
+    .article-meta {
+      font-size: 0.9em;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .article-content p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Thrive Mind</h1>
+  </header>
+
+  <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+
+  <div class="menu" id="menu">
+    <h2>Menu</h2>
+    <button onclick="window.location.href='Riyal.html'">Home</button>
+    <button onclick="window.location.href='Article page.html'">Articles</button>
+    <button onclick="window.location.href='Contact Page.html'">Therapy</button>
+    <button onclick="goBack()">Back</button>
+  </div>
+
+  <div class="article-wrapper">
+    <div class="article-image">
+      <img src="succeeded.jpeg" alt="Anxiety illustration">
+    </div>
+    <div class="article-content">
+      <h2>"I breathe, I pause, I take back control."</h2>
+       <h2>Sarah Smith quotes after overcoming her disorder of severe anxiety and using help from Thrive Mind</h2>
+      <p>For years, Sarah Smith struggled with severe anxiety that disrupted nearly every part of her life. Simple tasks became overwhelming, and panic attacks showed up without warning. “I felt like I was constantly fighting my own mind,” she said. Despite trying different self-help techniques, nothing seemed to stick. There were moments she nearly gave up, convinced she’d never feel like herself again.</p>
+      <p>Everything changed one night when she stumbled upon Thrive Mind, a mental wellness website she found during a restless scroll through her phone. Curious but skeptical, Sarah explored the site and eventually signed up for therapy. What stood out was the personalized approach — the therapists didn’t just hand her generic advice, they helped her build practical strategies tailored to her life.
+
+        Slowly, she began to feel a shift. Through consistent sessions, guided exercises, and compassionate support, Sarah learned how to manage her anxiety rather than fear it. The panic attacks became less frequent. Her confidence began to return.
+
+        Today, Sarah is thriving. She’s returned to work, reconnected with friends, and even started mentoring others dealing with anxiety. “Finding Thrive Mind didn’t cure me overnight,” she says, “but it gave me the tools to reclaim my life.”</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>

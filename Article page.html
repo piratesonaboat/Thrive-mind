@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Articles - Thrive Mind☘️</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #262928;
+      color: beige;
+    }
+
+    header {
+      background-color: #388a3c;
+      padding: 20px;
+      text-align: left;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .menu-btn {
+      background-color: #61da85;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .menu {
+      background-color: #5ab95e;
+      color: black;
+      width: 200px;
+      padding: 20px;
+      border-radius: 10px;
+      display: none;
+      position: fixed;
+      top: 60px;
+      right: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    .menu h2 {
+      margin: 10px 0 20px;
+      text-align: center;
+      color: beige;
+    }
+
+    .menu button {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      background-color: #7dc776;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .menu button:hover {
+      opacity: 0.8;
+    }
+
+    .article-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .article-image {
+      flex: 1;
+      min-width: 300px;
+      max-width: 400px;
+    }
+
+    .article-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .article-content {
+      flex: 2;
+      padding: 30px;
+    }
+
+    .article-content h2 {
+      color: #7dc776;
+      margin-bottom: 10px;
+    }
+
+    .article-meta {
+      font-size: 0.9em;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .article-content p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Thrive Mind</h1>
+  </header>
+
+  <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+
+  <div class="menu" id="menu">
+    <h2>Menu</h2>
+    <button onclick="window.location.href='Riyal.html'">Home</button>
+    <button onclick="window.location.href='Success Stories.html'">Success Stories</button>
+    <button onclick="window.location.href='Contact Page.html'">Therapy</button>
+    <button onclick="goBack()">Back</button>
+  </div>
+
+  <div class="article-wrapper">
+    <div class="article-image">
+      <img src="download.jpeg" alt="Anxiety illustration">
+    </div>
+    <div class="article-content">
+      <h2>Understanding Anxiety Disorders</h2>
+       <h2> When Panic, Fear, and Worries Overwhelm</h2>
+      <div class="article-meta">Written by Harrison Wein, Ph.D.</div>
+      <p>Many of us worry from time to time. We fret over finances, feel anxious about job interviews, or get nervous about social gatherings. These feelings can be normal or even helpful. They may give us a boost of energy or help us focus. But for people with anxiety disorders, they can be overwhelming.</p>
+      <p>The good news is that most anxiety disorders get better with therapy. The course of treatment depends on the type of anxiety disorder. Medications, psychotherapy (“talk therapy”), or a combination of both can usually relieve troubling symptoms.
+
+        “Anxiety disorders are one of the most treatable mental health problems we see,” says Dr. Daniel Pine, an NIH neuroscientist and psychiatrist. “Still, for reasons we don’t fully understand, most people who have these problems don’t get the treatments that could really help them.”</p>
+      <p>Thankfully, support is available. From talk therapy to breathing techniques, medication, and self-care routines, there are many paths to feeling better. At Thrive Mind, we believe in meeting you where you are and helping you grow at your own pace.</p>
+      <p>If you're struggling with anxiety, you're not alone. Reach out, explore our therapy options, and take that first step toward healing.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>
